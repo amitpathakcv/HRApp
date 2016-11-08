@@ -1,0 +1,6 @@
+E:\HRTest\HRTest\HRTest\bin\HRTest.dll.config
+E:\HRTest\HRTest\HRTest\bin\HRTest.dll
+E:\HRTest\HRTest\HRTest\bin\HRTest.pdb
+E:\HRTest\HRTest\HRTest\obj\Debug\HRTest.csprojResolveAssemblyReference.cache
+E:\HRTest\HRTest\HRTest\obj\Debug\HRTest.dll
+E:\HRTest\HRTest\HRTest\obj\Debug\HRTest.pdb

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="JS/Lib/angular.min.js"></script>
+    <script src="JS/Models/App.js"></script>
+    <script src="JS/Controllers/MyCtrl.js"></script>
+</head>
+<body ng-app="HrApp">
+    <div ng-controller="HrCtrl">
+<ul ng-repeat="Dept in empdata">
+   <li><input type="checkbox" ng-model="Deptment" />{{Dept.Name}}
+    
+       <ul ng-repeat="Emp in Dept.Emp" ng-show="Deptment">
+           <li> <input type="checkbox" name="{{Emp.EmpName}}" ng-model="Employee" />{{Emp.EmpName}}
+               <div ng-show="Employee">{{Dept.Name}} -  {{Emp.EmpName}}
+               <hr />
+               <div>Department
+                   <ul ng-repeat="Pos in Pos">
+                       <li><input type="checkbox" name="{{Pos.Name}}" />{{Pos.Name}}</li>
+                   </ul>
+                   </div>
+               <hr />
+               <div>Skills
+                   <ul ng-repeat="skill in skills">
+                      <li> <input type="checkbox" name="{{skill.skill}}" />{{skill.skill}}</li>
+                   </ul>
+                   </div>
+               <hr />
+               <div>Salery
+                   <ul ng-repeat="Salery in salery">
+                       <li><input type="checkbox" name="{{Salery.salery}}" />{{Salery.salery}}</li>
+                   </ul>
+                   </div>
+               <div><button name="save" value="Save">Save</button></div>
+               </div>
+           </li>
+           
+       </ul>
+    </li>
+</ul>    
+        
+    </div>
+</body>
+</html>
